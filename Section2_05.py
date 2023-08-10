@@ -16,7 +16,5 @@ for i in range(1, N+1):
     for j in range(1, M+1):
         #인덱스가 합, value는 개수
         count[i+j]+=1
-
 count_sort = list(filter(lambda x: count[x] == max(count), range(len(count))))
-
 print(count_sort)
